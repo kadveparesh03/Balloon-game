@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aee6f2;
+}
+
+#game-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#pump {
+    width: 250px;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.pump-pressed {
+    transform: scale(0.9);
+}
+
+#balloon-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.balloon {
+    position: absolute;
+    bottom: 15%;
+    left: 45%;
+    text-align: center;
+}
+
+.balloon img {
+    width: 60px;
+    transition: width 0.2s ease-in-out;
+}
+
+.balloon-letter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+#word-display {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(254, 6, 6);
+    font-style: oblique;
+} 
